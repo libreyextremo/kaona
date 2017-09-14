@@ -1,5 +1,11 @@
 # Kaona
 
+Kaona is a website where art fans, art shop owners, gallery owners and museums may share/find information about artworks that are near them and buy them if they are on sale.
+
+This project is the client side of Kaona App. 
+
+# Aditional Information
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
 ## Development server
