@@ -2,7 +2,7 @@
 
 Kaona is a website where art fans, art shop owners, gallery owners and museums may share/find information about artworks that are near them and buy them if they are on sale.
 
-This project is the client side of Kaona App. 
+This project is the client side of Kaona App.
 
 # Aditional Information
 
@@ -32,3 +32,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Author
+
+Jose Maria "Joey" Sobrinos Garcia
