@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { AgmCoreModule } from '@agm/core';
+
+import { routing } from './app.routes';
+
+import { DatadbService } from './datadb.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
-
-import { routing } from './app.routes';
 import { MapComponent } from './map/map.component';
+import { NavComponent } from './nav/nav.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -16,15 +22,21 @@ import { MapComponent } from './map/map.component';
     AppComponent,
     SearchComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    NavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    routing
+    HttpModule,
+    routing,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDqVA_aiWUTiJs6gAO2bwFbGpZk8Tp87Kg'
+    })
   ],
-  providers: [],
+  providers: [DatadbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

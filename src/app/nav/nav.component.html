@@ -1,0 +1,11 @@
+<div class="topnav" id="myTopnav">
+  <input class="sendButtonNav" type="button" name="searchButtonNav" value="Search"/>
+  <input type="text" name="searchTextNav" placeholder=""/>
+  <a routerLink="/login" routerLinkActive="active" *ngIf="!registered">Log in</a>
+  <a routerLink="/register" routerLinkActive="active" *ngIf="!registered">Register</a>
+  <a routerLink="/author" routerLinkActive="active" *ngIf="registered">Author</a>
+  <a routerLink="/settings" routerLinkActive="active" *ngIf="registered">Settings</a>
+  <a routerLink="/addart" routerLinkActive="active" *ngIf="registered">Add art</a>
+  <a routerLink="/closeSesion" routerLinkActive="active" *ngIf="registered">Close session</a>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+</div>

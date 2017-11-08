@@ -1,7 +1,10 @@
-<form class= "container"
-    [formGroup] = "formSearch"
-    (ngSubmit) = "onSubmit(formSearch.value)">
-  <h2>Search Component</h2>
-  <input type="text" name="searchText" placeholder="I am searching..." formControlName="searchText"/>
-  <input type="submit" [disabled]="!formSearch.valid" value="submit"/>
-</form>
+<div class="containerMain">
+  <form class= "container"
+      [formGroup] = "formSearch"
+      (ngSubmit) = "onSubmit(formSearch.value)">
+    <input type="text" name="searchText" placeholder="I am searching..."
+      formControlName="searchText"/>
+    <input class="sendButton" type="submit" [disabled]="!formSearch.valid" value="Submit"/>
+  </form>
+  <h2>Under construction...</h2>
+</div>
